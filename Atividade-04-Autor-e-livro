@@ -1,0 +1,18 @@
+class Autor:
+    def __init__(self, nome, data_nascimento):
+        self.nome = nome
+        self.data_nascimento = data_nascimento
+
+class Livro:
+    def __init__(self, titulo, autor):
+        self.titulo = titulo
+        self.autor = autor
+
+autor_senhor_aneis = Autor("J.R.R. Tolkien", "3 de janeiro de 1892")
+livro1 = Livro("A Sociedade do Anel", autor_senhor_aneis)
+livro2 = Livro("As Duas Torres", autor_senhor_aneis)
+livro3 = Livro("O Retorno do Rei", autor_senhor_aneis)
+
+print(f"Livro 1 - Título: {livro1.titulo}, Autor: {livro1.autor.nome}, Data de Nascimento do Autor: {livro1.autor.data_nascimento}")
+print(f"Livro 2 - Título: {livro2.titulo}, Autor: {livro2.autor.nome}, Data de Nascimento do Autor: {livro2.autor.data_nascimento}")
+print(f"Livro 3 - Título: {livro3.titulo}, Autor: {livro3.autor.nome}, Data de Nascimento do Autor: {livro3.autor.data_nascimento}")
