@@ -1,0 +1,17 @@
+class SistemaOperacional:
+    def __init__(self, nome, versao):
+        self.nome = nome
+        self.versao = versao
+
+class Computador:
+    def __init__(self, sistema):
+        self.sistema = sistema
+
+sistema_windows = SistemaOperacional("Windows", "10")
+computador1 = Computador(sistema_windows)
+
+sistema_linux = SistemaOperacional("Linux", "Ubuntu 20.04")
+computador2 = Computador(sistema_linux)
+
+print(f"Computador 1 - Sistema: {computador1.sistema.nome} {computador1.sistema.versao}")
+print(f"Computador 2 - Sistema: {computador2.sistema.nome} {computador2.sistema.versao}")
